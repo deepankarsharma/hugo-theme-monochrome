@@ -56,9 +56,14 @@
                 <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
                     {{- partial "svg/feather.html" "search" -}}
                 </svg>
-                {{- partial "search-menu.html" -}}
             </div>
         {{ end }}
+
+        <div id="rss_tool">
+            <svg id="rss_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+                        {{- partial "svg/feather.html" "rss" -}}
+                    </svg>
+        </div>
 
         {{ if .Site.IsMultiLingual }}
             <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
